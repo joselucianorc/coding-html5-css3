@@ -97,8 +97,7 @@ footer {
 }
 
 main {
-	width: 940px;
-	margin: 0 auto;
+
 }
 
 form {
@@ -161,11 +160,37 @@ td, th {
 	width: 100%;
 }
 
+.titulo-principal:first-letter {
+	font-weight: bold;
+}
+
+.titulo-principal:before {
+	content: " [ ";
+}
+
+.titulo-principal:after {
+	content: " ] ";
+}
+
+
+/*
+p:first-line {
+	font-style: italic;
+}
+*/
+
 .titulo-principal {
 	text-align: center;
 	font-size: 2em; /* 2x o tamanho base */
 	margin: 0 0 1em;
 	clear: left;
+}
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
 }
 
 .principal p {
@@ -188,6 +213,9 @@ td, th {
 
 .mapa {
 	padding: 3em 0;
+  /*background: linear-gradient(90deg, orange 50%, blue 75%, red, green);
+	background: radial-gradient(orange, blue, red, green);*/
+	background: linear-gradient(#FFFFFF, #888888)
 }
 
 .mapa p {
@@ -195,8 +223,14 @@ td, th {
 	text-align: center;
 }
 
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
 .beneficios {
 	padding: 3em 0;
+	background: #888888;
 }
 
 .conteudo-beneficios {
@@ -218,11 +252,25 @@ td, th {
 	font-weight: bold;
 }
 
-.itens:first-child {
+.itens:before {
+	content: "🟊";
+}
+
+/*
+.itens:after {
+	content: "🟊";
+}
+*/
+
+.itens:last-child {
 
 }
 
 .itens:nth-child(3) {
+
+}
+
+.itens:nth-child(2n) {
 
 }
 
