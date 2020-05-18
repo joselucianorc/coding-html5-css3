@@ -184,6 +184,8 @@ p:first-line {
 	font-size: 2em; /* 2x o tamanho base */
 	margin: 0 0 1em;
 	clear: left;
+	/*color: rgba(0,0,0, 0.3) */
+	/* text-shadow: 2px 2px red;*/
 }
 
 .principal {
@@ -231,6 +233,7 @@ p:first-line {
 .beneficios {
 	padding: 3em 0;
 	background: #888888;
+	/* box-shadow: inset 0 0 30px #FF0000; */
 }
 
 .conteudo-beneficios {
@@ -276,6 +279,14 @@ p:first-line {
 
 .imagem-beneficios {
 	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	/*box-shadow: 10px 10px 30px 20px #000000, -10px -10px yellow, -20px 20px rgba(255,0,0,0.50); */
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3;
 }
 
 .video {
