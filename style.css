@@ -282,3 +282,39 @@ p:first-line {
 	width: 560px;
 	margin: 2em auto;
 }
+
+/* selecionando filho direto */
+/*
+main > p {
+	background: red;
+}
+*/
+
+/* primeiro irmao */
+/*
+img + p {
+	background: blue;
+}
+*/
+
+/* todos os seletores que vem depois da imagem */
+/*
+img ~ p {
+		background: yellow;
+}
+*/
+
+/* Excluindo o bloco de missao */
+/*
+.principal p:not(#missao) {
+	background: orange;
+}
+
+/* Medidas proporcionais */
+/*
+.img {
+	width: calc((100% / 3));
+	width: calc( (100% / 3) - 10px);
+}
+*/
+
